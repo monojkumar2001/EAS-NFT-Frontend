@@ -6,19 +6,19 @@
   }
   @font-face {
     font-family:'BourtonBase';
-    src: url(../fonts/bourtonbase.ttf);
+    src: url(../../../public/fonts/bourtonbase.ttf);
   }
   @font-face {
     font-family:' BourtonBaseDrop';
-    src: url(../fonts/bourtonbasedrop.ttf);
+    src: url(../../../public/fonts/bourtonbasedrop.ttf);
   }
   @font-face {
     font-family:'BourtonLineBold';
-    src: url(../fonts/bourtonlinebold.ttf);
+    src: url(../../../public/fonts/bourtonlinebold.ttf);
   }
   @font-face {
     font-family:'DM Sans';
-    src: url(../fonts/DMSans-Regular.ttf);
+    src: url(../../../public/fonts/DMSans-Regular.ttf);
   }
   /*===== VARIABLES CSS =====*/
 
@@ -30,6 +30,7 @@
     --body-font:  'DM Sans', sans-serif;
     --primary-font:'BourtonBase', sans-serif;
     --secondary-font:'BourtonBaseDrop', sans-serif;
+    --third-font:'BourtonLineBold', sans-serif;
     --sec-title-font: 25px;
     --p-font: 18px;
     --l-title: 80px;
@@ -98,12 +99,6 @@ body {
     line-height: var(--p-font-height);
     color: var(--white-color) !important;
   }
-  /* .app-con{
-    width: 100%;
-    position:absolute;
-    height: 100vh;
-   background: radial-gradient(#ffffff, #00A3FF);
-  } */
   img {
     vertical-align: middle;
     height: auto;

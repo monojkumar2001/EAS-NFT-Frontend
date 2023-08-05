@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "../Style/dashboard.css";
 import MyNfts from "../components/Dashboard/MyNfts";
-
-// import dashboardSidebar from "../components/dashboard/dashboardSidebar";
-// import ImageCard from "../components/dashboard/ImageCard";
-// import axios from "axios";
-// import FilterType from "../components/dashboard/FilterType/FilterType";
+import AccountDetails from "../components/Dashboard/AccountDetails";
+import ContactUs from "../components/Dashboard/ContactUs";
+import ClaimNewNfts from "../components/Dashboard/ClaimNewNfts";
+import Referral from "../components/Dashboard/Referral";
+import { Link } from "react-router-dom";
 const DashboardPage = () => {
   const [filterActive, setFilterActive] = useState([false]);
   const toggleFilterMenu = () => {
@@ -113,7 +113,7 @@ const DashboardPage = () => {
                           >
                             <div className="filter-type">
                               <img
-                                src="/images/dashboard/referrals.svg"
+                                src="/images/dashboard/referral.svg"
                                 alt=""
                               />
                             </div>
@@ -122,14 +122,32 @@ const DashboardPage = () => {
                         </div>
                       </div>
                       <div className="filter-list-item">
+                        <div className="filter-item-bar">
+                          <div
+                            className="filter-left-items d-flex align-items-center gap-2 "
+                            onClick={toggleFilterMenu}
+                          >
+                            <Link to={"/docs"}>
+                              <div className="filter-type d-flex gap-2 align-items-center">
+                                <img
+                                  src="/images/dashboard/knowledge.svg"
+                                  alt=""
+                                />
+                                <span>Knowledge Base</span>
+                              </div>
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="filter-list-item">
                         <div
                           className={
-                            activeFilter === 5
+                            activeFilter === 6
                               ? "filter-item-bar active-filter-item-bar"
                               : "filter-item-bar"
                           }
                           onClick={() => {
-                            toggleFilter(5);
+                            toggleFilter(6);
                           }}
                         >
                           <div
@@ -137,12 +155,32 @@ const DashboardPage = () => {
                             onClick={toggleFilterMenu}
                           >
                             <div className="filter-type">
-                              <img
-                                src="/images/dashboard/knowledge.svg"
-                                alt=""
-                              />
+                              <img src="/images/dashboard/contact.svg" alt="" />
                             </div>
-                            <span>Knowledge Base</span>
+                            <span>Contact Us</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="filter-list-item">
+                        <div
+                          className={
+                            activeFilter === 7
+                              ? "filter-item-bar active-filter-item-bar"
+                              : "filter-item-bar"
+                          }
+                          onClick={() => {
+                            toggleFilter(7);
+                          }}
+                        >
+                          <div
+                            className="filter-left-items d-flex align-items-center gap-2 "
+                            onClick={toggleFilterMenu}
+                          >
+                            <div className="filter-type">
+                              <img src="/images/dashboard/logout.svg" alt="" />
+                            </div>
+                            <span>Logout</span>
                           </div>
                         </div>
                       </div>
@@ -170,7 +208,7 @@ const DashboardPage = () => {
                         : "filter-list-item-ber"
                     }
                   >
-                    <h1>Account Details</h1>
+                    <AccountDetails />
                   </div>
 
                   <div
@@ -189,7 +227,7 @@ const DashboardPage = () => {
                         : "filter-list-item-ber"
                     }
                   >
-                    <h1>Claim New NFTs</h1>
+                    <ClaimNewNfts />
                   </div>
                   <div
                     className={
@@ -198,9 +236,9 @@ const DashboardPage = () => {
                         : "filter-list-item-ber"
                     }
                   >
-                    <h1>My Referrals</h1>
+                    <Referral />
                   </div>
-                  <div
+                  {/* <div
                     className={
                       activeFilter === 5
                         ? "filter-list-item-ber active"
@@ -208,6 +246,15 @@ const DashboardPage = () => {
                     }
                   >
                     <h1>Knowledge Base</h1>
+                  </div> */}
+                  <div
+                    className={
+                      activeFilter === 6
+                        ? "filter-list-item-ber active"
+                        : "filter-list-item-ber"
+                    }
+                  >
+                    <ContactUs />
                   </div>
                 </div>
               </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
-import SocialMediaLinkItem from "./SocialMediaLink/SocialMediaLinkItem";
+import SocialMediaLinkItem from "../SocialMediaLink/SocialMediaLinkItem";
 // import SocialMediaLinkItem from './SocialMediaLink/SocialMediaLinkItem'
 
 const Footer = () => {

@@ -219,7 +219,7 @@ height: 100%;
     position: fixed;
     backdrop-filter: blur(7px);
     background: #27191999;
-    overflow-y: auto;
+    overflow-y: auto; 
     z-index: 110;
     opacity: 0;
      top: 0; 
@@ -240,12 +240,91 @@ height: 100%;
 cursor: pointer;
 font-size: 16px;
 }
-
-/* ================ My Nfts ================= */
-.my-nfts-wrapper {
-  
+.claim-content-item span{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #D9D9D9;
 }
+/* ================== Account Details ================ */
+.content-eas-nft-wrapper{
+    padding: 0 50px 80px 50px;
+}
+.content-eas-nft-wrapper .page-title-item{
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    padding-bottom: 25px;
+    color: #31274B;
 
+}
+.account-input-fluid-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.password-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+ color: #31274B;
+    font-family: var(--secondary-font);
+}
+.account-details-from >form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.account-input-fluid-item label{
+    font-size: 18px;
+    color: var(--black-color);
+}
+.account-input-fluid-item input{
+    border-radius: 7px;
+    padding: 10px 20px;
+border: 1px solid rgba(0, 0, 0, 0.20);
+background: #FFF;
+box-shadow: 5px 10px 10px 0px rgba(175, 175, 175, 0.12);
+}
+.password-input-fluid {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+    box-shadow: 5px 10px 10px 0px rgba(175, 175, 175, 0.12); 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding:  0 10px;
+    border-radius: 7px;
+}
+.password-input-fluid input{
+    width: 100%;
+    border: none;
+    background: none;
+    box-shadow: none;
+    padding: 10px;
+}
+.password-input-fluid span img{
+    cursor: pointer;
+}
+.save-change-btn{
+    width: fit-content;
+    margin-top: 20px;
+}
+.account-input-fluid-item textarea{
+    border-radius: 7px;
+    padding: 10px 20px;
+border: 1px solid rgba(0, 0, 0, 0.20);
+background: #FFF;
+box-shadow: 5px 10px 10px 0px rgba(175, 175, 175, 0.12);
+}
+/* ================ My Nfts ================= */
 .nft-search-fluid-input {
     border-radius: 6px;
     background: rgba(0, 23, 44, 0.05);
@@ -286,6 +365,30 @@ font-size: 16px;
     text-align: center;
 
 }
+.col-lg-9.col-md-12 {
+    padding: 0;
+}
+
+/* ================= Referral =================== */
+.referral-input-box {
+    padding: 10px 20px 10px 30px;
+    border-radius: 10px;
+border: 1px solid rgba(0, 0, 0, 0.20);
+background: #FFF;
+box-shadow: 10px 14px 24px 0px rgba(175, 175, 175, 0.12);
+}
+.referral-history-list-item h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: #5E5E5E;
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 1240px) {
     .filter-menu-item-con{
         display: flex;
@@ -386,6 +489,9 @@ margin: 10px;
     }
     .filter-nft-opensea{
         width: 100%;
+    }
+    .col-lg-9 {
+        padding: 0 !important;
     }
 }
 @media screen and (max-width: 768px) {
