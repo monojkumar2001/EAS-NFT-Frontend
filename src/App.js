@@ -13,6 +13,7 @@ import "./Style/layout/Header.css";
 import "./Style/layout/footer.css";
 import { FaqData1,FaqData2,FaqData3,FaqData4,FaqData5,FaqData6 } from "./FaqData/FaqData";
 import KnowledgeBaseFaq from "./Pages/KnowledgeBaseFaq";
+import AddressNFTsPage from "./Pages/AddressNFTsPage";
 function App() {
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap.bundle.min.js");
@@ -29,6 +30,7 @@ function App() {
           <Route path="/" element={<DashboardPage />} />
           <Route path="/docs" element={<KnowledgeBaseFaq data1={FaqData1} data2={FaqData2} data3={FaqData3} data4={FaqData4} data5={FaqData5} data6={FaqData6}  />}/> 
           <Route path="/docs/:id"   element={<Slug data1={FaqData1} data2={FaqData2} data3={FaqData3} data4={FaqData4} data5={FaqData5} data6={FaqData6}  />}/> 
+          <Route path="/address-nfts" element={<AddressNFTsPage/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

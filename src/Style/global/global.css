@@ -27,12 +27,12 @@
     --main-color: #00CDDF;
     --black-color: #141820 ;
     --white-color: #ffffff;
-    --body-font:  'DM Sans', sans-serif;
+    --body-font:  'DM Sans';
     --primary-font:'BourtonBase', sans-serif;
     --secondary-font:'BourtonBaseDrop', sans-serif;
     --third-font:'BourtonLineBold', sans-serif;
     --sec-title-font: 25px;
-    --p-font: 18px;
+    --p-font: 16px;
     --l-title: 80px;
     --p-font-height: 30px;
   }
@@ -170,6 +170,28 @@ body {
   .custom-btn:hover{
     color: var(--white-color);
     transform: scale(0.95);
+  }
+  .alt-custom-btn {
+    border: none;
+    background: var(--white-color);
+    color: var(--black-color);
+    font-family: var(--secondary-font);
+    padding: 10px 30px;
+    border-radius: 6px;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .alt-custom-btn:hover{
+    color: var(--white-color);
+    transform: scale(0.95);
+    background-color: var(--main-color);
   }
   
   /* ===================custom button end=============== */

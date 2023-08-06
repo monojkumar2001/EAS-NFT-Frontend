@@ -80,7 +80,7 @@ function Header() {
                   <div className="dp-menu">
                     <ul className="dp-menu-ul">
                       <li onClick={_toggleSidebar}>
-                        <Link to={""}>Address NFTs</Link>
+                        <Link to={"/address-nfts"}>Address NFTs</Link>
                       </li>
                       <li onClick={_toggleSidebar}>
                         <Link to={""}>Charity NFTs</Link>
