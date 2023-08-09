@@ -11,26 +11,26 @@ const SocialMediaLinkItem = () => {
   return (
     <>
       <div className="social-media-link d-flex algin-items-center gap-3 mb-3">
-        <Link href="https://twitter.com/eas_nft" target="_blank">
+        <a href="https://twitter.com/eas_nft" target="_blank">
           <FaTwitter />
-        </Link>
-        <Link href="https://www.instagram.com/eas_nft/" target="_blank">
+        </a>
+        <a href="https://www.instagram.com/eas_nft/" target="_blank">
           <FaInstagram />
-        </Link>
+        </a>
 
-        <Link href="https://www.youtube.com/@easNFT" target="_blank">
+        <a href="https://www.youtube.com/@easNFT" target="_blank">
           <FaYoutube />
-        </Link>
-        <Link href="https://www.youtube.com/@easNFT" target="_blank">
+        </a>
+        <a href="https://www.facebook.com/easNFT/" target="_blank">
           <FaFacebookF />
-        </Link>
-        <Link
+        </a>
+        <a
           href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Feasnft%2Fabout%2F"
           target="_blank"
         >
           <FaLinkedinIn />
-        </Link>
-        <Link
+        </a>
+        <a
           href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Feasnft%2Fabout%2F"
           target="_blank"
         >
@@ -46,7 +46,7 @@ const SocialMediaLinkItem = () => {
               fill="white"
             />
           </svg>
-        </Link>
+        </a>
       </div>
     </>
   );

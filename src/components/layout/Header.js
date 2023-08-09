@@ -108,10 +108,10 @@ function Header() {
                   <div className="dp-menu">
                     <ul className="dp-menu-ul">
                       <li onClick={_toggleSidebar}>
-                        <Link to={""}>NFT Use Cases</Link>
+                        <Link to={"/nft-use-cases"}>NFT Use Cases</Link>
                       </li>
                       <li onClick={_toggleSidebar}>
-                        <Link to={""}>NFT Pricing</Link>
+                        <Link to={"/nft-pricing"}>NFT Pricing</Link>
                       </li>
                       <li onClick={_toggleSidebar}>
                         <Link to={""}>Knowledge Base & FAQ</Link>
@@ -136,7 +136,7 @@ function Header() {
                         <Link to={""}>Our Mission</Link>
                       </li>
                       <li onClick={_toggleSidebar}>
-                        <Link to={""}>Contact</Link>
+                        <Link to={"/contact"}>Contact</Link>
                       </li>
                       <li onClick={_toggleSidebar}>
                         <Link to={""}>Careers</Link>
@@ -163,7 +163,7 @@ function Header() {
                   <div className="dp-menu">
                     <ul className="dp-menu-ul">
                       <li onClick={_toggleSidebar}>
-                        <Link to={""}>Login/Register</Link>
+                        <Link to={"/login-register"}>Login/Register</Link>
                       </li>
                       <li onClick={_toggleSidebar}>
                         <Link to={""}>Account Dashboard</Link>

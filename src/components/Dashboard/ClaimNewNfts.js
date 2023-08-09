@@ -1,8 +1,9 @@
 import React, {useEffect, useRef, useState} from 'react'
 const mapApiJs = "https://maps.googleapis.com/maps/api/js";
 const geocodeJson = "https://maps.googleapis.com/maps/api/geocode/json";
-const apiKey = import.meta.env.API_KEY;
-console.log(apiKey); 
+const apiKey ='AIzaSyC9LN9PnRFUQgfYCF-MxzvvJ914d7aS3JI';
+// import 
+// console.log(apiKey); 
 
 // load google map api js
 
@@ -72,6 +73,7 @@ const ClaimNewNfts = () => {
       return Promise.resolve();
     }
     const src = `${mapApiJs}?key=${apiKey}&libraries=places&v=weekly`;
+
     return loadAsyncScript(src);
   };
 
@@ -98,7 +100,7 @@ const ClaimNewNfts = () => {
     const url = `${geocodeJson}?key=${apiKey}&latlng=${lat},${lng}`;
     searchInput.current.value = "Getting your location...";
     fetch(url)
-      .then((response) => response.json())
+      // .then((response) => response.json())
       .then((location) => {
         const place = location.results[0];
         const _address = extractAddress(place);
@@ -141,6 +143,7 @@ const ClaimNewNfts = () => {
           </div>
           <div className="account-input-fluid-item">
             {/* <InputClaimNFTs/> */}
+            
             <input
               ref={searchInput}
               type="text"

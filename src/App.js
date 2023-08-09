@@ -12,8 +12,13 @@ import "./Style/global/global.css";
 import "./Style/layout/Header.css";
 import "./Style/layout/footer.css";
 import { FaqData1,FaqData2,FaqData3,FaqData4,FaqData5,FaqData6 } from "./FaqData/FaqData";
-import KnowledgeBaseFaq from "./Pages/KnowledgeBaseFaq";
+import KnowledgeBaseFaq from "./Pages/KnowledgeBaseFaqPage";
 import AddressNFTsPage from "./Pages/AddressNFTsPage";
+import NFTUseCases from "./Pages/NFTUseCasesPage";
+import NftPricingPage from "./Pages/NftPricingPage";
+import AboutPage from "./Pages/AboutPage";
+import ContactPage from "./Pages/ContactPage";
+import LoginRegisterPage from "./Pages/LoginRegisterPage";
 function App() {
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap.bundle.min.js");
@@ -31,6 +36,11 @@ function App() {
           <Route path="/docs" element={<KnowledgeBaseFaq data1={FaqData1} data2={FaqData2} data3={FaqData3} data4={FaqData4} data5={FaqData5} data6={FaqData6}  />}/> 
           <Route path="/docs/:id"   element={<Slug data1={FaqData1} data2={FaqData2} data3={FaqData3} data4={FaqData4} data5={FaqData5} data6={FaqData6}  />}/> 
           <Route path="/address-nfts" element={<AddressNFTsPage/>}/>
+          <Route path="/nft-use-cases" element={<NFTUseCases/>}/>
+          <Route path="/nft-pricing" element={<NftPricingPage/>}/>
+          <Route path="/about" element={<AboutPage/>}/>
+          <Route path="/contact" element={<ContactPage/>}/>
+          <Route path="/login-register" element={<LoginRegisterPage/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

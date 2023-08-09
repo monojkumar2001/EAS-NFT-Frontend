@@ -74,7 +74,7 @@
 }
 .digital-address-nft-content .address-details span a{
     color: var(--main-color);
-    font-weight:600;
+    font-weight:500;
 }
 .digital-makers-img{
     width: 100%;
@@ -88,8 +88,5 @@
 }
 .nft-pricing-nft-link{
     color: var(--main-color);
-    font-weight: 600;
-}
-.nft-pricing-nft-link:hover{
-
+    font-weight: 500;
 }

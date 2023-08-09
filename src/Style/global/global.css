@@ -33,22 +33,22 @@
     --third-font:'BourtonLineBold', sans-serif;
     --sec-title-font: 25px;
     --p-font: 16px;
-    --l-title: 80px;
     --p-font-height: 30px;
   }
 
   .section-title{
-    font-size: var(--l-title);
-    font-weight: 900;
-    line-height: 90px;
-    font-family: var(--primary-font );
-    color: var(--black-color);
-    /* letter-spacing: 2px; */
+    font-size:64px;
+    font-weight: 500;
+    color: var(--white-color);
+    font-family: var(--primary-font);
   }
   .section-title span{
     color: var(--main-color);
   }
-
+.focus-color{
+  color: var(--main-color);
+  font-family: var(--primary-font);
+}
   
   @media screen and (max-width: 992px) {
     :root {
@@ -56,7 +56,7 @@
       --p-font: 16px;
     }
     .section-title{
-      line-height: 65px !important;
+      font-size: 50px;
     }
   }
   
@@ -65,7 +65,7 @@
       --l-title: 40px;
     }
     .section-title{
-      line-height: 50px !important;
+      font-size: 40px;
     }
   }
   
@@ -200,7 +200,9 @@ body {
   .cpy-5 {
     padding: 50px 0;
   }
-  
+  .cpt-9{
+    padding-top: 150px;
+  }
   .cpy-8 {
     padding-top: 100px;
     padding-bottom: 80px;
@@ -230,6 +232,9 @@ body {
   @media screen and (max-width: 992px) {
     .cpy-5 {
       padding: 40px 0;
+    }
+    .cpt-9{
+      padding-top: 100px;
     }
     .cpy-8 {
       padding-top: 80px;

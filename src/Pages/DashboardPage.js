@@ -6,6 +6,8 @@ import ContactUs from "../components/Dashboard/ContactUs";
 import ClaimNewNfts from "../components/Dashboard/ClaimNewNfts";
 import Referral from "../components/Dashboard/Referral";
 import { Link } from "react-router-dom";
+import Ticket from "../components/Ticket/Ticket";
+import TicketMessages from "../components/Ticket/TicketMessages";
 const DashboardPage = () => {
   const [filterActive, setFilterActive] = useState([false]);
   const toggleFilterMenu = () => {
@@ -90,9 +92,9 @@ const DashboardPage = () => {
                             onClick={toggleFilterMenu}
                           >
                             <div className="filter-type">
-                              <img src="/images/dashboard/claim.svg" alt="" />
+                              <img src="/images/dashboard/messages.svg" alt="" />
                             </div>
-                            <span>Claim New NFTs</span>
+                            <span>Messages</span>
                           </div>
                         </div>
                       </div>
@@ -105,6 +107,28 @@ const DashboardPage = () => {
                           }
                           onClick={() => {
                             toggleFilter(4);
+                          }}
+                        >
+                          <div
+                            className="filter-left-items d-flex align-items-center gap-2 "
+                            onClick={toggleFilterMenu}
+                          >
+                            <div className="filter-type">
+                              <img src="/images/dashboard/claim.svg" alt="" />
+                            </div>
+                            <span>Claim New NFTs</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="filter-list-item">
+                        <div
+                          className={
+                            activeFilter === 5
+                              ? "filter-item-bar active-filter-item-bar"
+                              : "filter-item-bar"
+                          }
+                          onClick={() => {
+                            toggleFilter(5);
                           }}
                         >
                           <div
@@ -161,7 +185,6 @@ const DashboardPage = () => {
                           </div>
                         </div>
                       </div>
-
                       <div className="filter-list-item">
                         <div
                           className={
@@ -172,6 +195,22 @@ const DashboardPage = () => {
                           onClick={() => {
                             toggleFilter(7);
                           }}
+                        >
+                          <div
+                            className="filter-left-items d-flex align-items-center gap-2 "
+                            onClick={toggleFilterMenu}
+                          >
+                            <div className="filter-type">
+                              <img src="/images/dashboard/ticket.svg" alt="" />
+                            </div>
+                            <span>Ticket</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="filter-list-item">
+                        <div
+                          className="filter-item-bar"
                         >
                           <div
                             className="filter-left-items d-flex align-items-center gap-2 "
@@ -227,7 +266,7 @@ const DashboardPage = () => {
                         : "filter-list-item-ber"
                     }
                   >
-                    <ClaimNewNfts />
+                    <TicketMessages/>
                   </div>
                   <div
                     className={
@@ -236,17 +275,17 @@ const DashboardPage = () => {
                         : "filter-list-item-ber"
                     }
                   >
-                    <Referral />
+                    <ClaimNewNfts />
                   </div>
-                  {/* <div
+                  <div
                     className={
                       activeFilter === 5
                         ? "filter-list-item-ber active"
                         : "filter-list-item-ber"
                     }
                   >
-                    <h1>Knowledge Base</h1>
-                  </div> */}
+                    <Referral />
+                  </div>                  
                   <div
                     className={
                       activeFilter === 6
@@ -255,6 +294,15 @@ const DashboardPage = () => {
                     }
                   >
                     <ContactUs />
+                  </div>
+                  <div
+                    className={
+                      activeFilter === 7
+                        ? "filter-list-item-ber active"
+                        : "filter-list-item-ber"
+                    }
+                  >
+                    <Ticket/>
                   </div>
                 </div>
               </div>

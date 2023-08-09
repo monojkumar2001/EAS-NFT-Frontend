@@ -2,7 +2,7 @@
     position: relative;
     transition: 0.4s;
     background: #141820;
-    padding: 150px 50px 50px 50px;
+    padding: 150px 50px 80px 50px;
     height: 100%;
 }
 .dashboard-wrapper{
@@ -120,7 +120,6 @@ color: rgba(7, 2, 40, 0.60);
 }
 .filter-list-item{
     cursor: pointer;
-    padding-bottom: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
@@ -385,7 +384,7 @@ box-shadow: 10px 14px 24px 0px rgba(175, 175, 175, 0.12);
 
 
 
-
+/* ======================== Ticket Page ================= */
 
 
 

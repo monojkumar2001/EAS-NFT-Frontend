@@ -29,7 +29,7 @@ const ContactUs = () => {
             </div>
             <div className="account-input-fluid-item">
               <label htmlFor="">Email *</label>
-           <textarea name="" id="" cols="30" rows="6" placeholder='How can we help? Have a question for us? Ask away.'></textarea>
+           <textarea name="" id="" cols="30" rows="5" placeholder='How can we help? Have a question for us? Ask away.'></textarea>
             </div>
     
             <button className="save-change-btn custom-btn" type="submit">

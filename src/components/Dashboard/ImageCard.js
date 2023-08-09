@@ -138,18 +138,3 @@ const ImageCard = ({ uniqueData }) => {
 };
 
 export default ImageCard;
-
-const nftData = [
-  {
-    id: 1,
-    title: "Elemental",
-    no: "4134",
-    img: "/images/nft-1.png",
-  },
-  {
-    id: 2,
-    title: "Elemental",
-    no: "4134",
-    img: "/images/nft-1.png",
-  },
-];

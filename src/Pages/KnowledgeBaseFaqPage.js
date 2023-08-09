@@ -1,8 +1,6 @@
 import React from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "../Style/knowledgeBase.css";
 
-import { Link } from "react-router-dom";
+import "../Style/knowledgeBase.css";
 // import KnowledgeFaqCard from "../components/KnowledgeBaseFaq/KnowledgeFaqCard";
 import EasNftTypes from "../components/KnowledgeBaseFaq/EasNftTypes";
 import GasFee from "../components/KnowledgeBaseFaq/GasFee";
@@ -10,19 +8,13 @@ import BuyingNFTs from "../components/KnowledgeBaseFaq/BuyingNFTs";
 import CryptoWallets from "../components/KnowledgeBaseFaq/CryptoWallets";
 import TheBasics from "../components/KnowledgeBaseFaq/TheBasics";
 import OpenSea from "../components/KnowledgeBaseFaq/OpenSea";
+import EasBanner from "../components/KnowledgeBaseFaq/EasBanner";
 
 function KnowledgeBaseFaq({data1, data2,data3, data4, data5, data6}) {
   return (
     <>
       {/* ================== Knowledge Base Banner section =================== */}
-      <div className="knowledge-base-banner">
-        <div className="knowledge-base-banner-wrapper">
-          <h2 className="eas-knowledge-title">EAS Knowledge Base</h2>
-          <div className="eas-knowledge-banner-img">
-            <LazyLoadImage src="/images/knowledge-base/knowledge-banner-img.svg" />
-          </div>
-        </div>
-      </div>
+    <EasBanner title="EAS Knowledge Base"/>
       {/* =================== KnowLedge Base Faq =================== */}
       <div className="knowledge-base-faq cpy-6">
         <div className="container">

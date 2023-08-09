@@ -48,7 +48,7 @@ const AddressNFTsPage = () => {
 
       <section className="digital-address-nft cpy-6">
         <div className="container">
-          <div className="digital-address-nft-wrapper row">
+          <div className="digital-address-nft-wrapper row d-flex align-items-center">
             <div className="col-lg-7 col-md-12">
               <div className="digital-address-nft-content">
                 <span className="sub-title">Owning Digital Rights</span>

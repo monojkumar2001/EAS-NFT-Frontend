@@ -159,6 +159,7 @@ background: rgba(255, 255, 255, 0.20);
 .social-media-link a:hover{
   transform: translateY(-5px);
   background:var(--main-color);
+  color: var(--white-color);
 }
 ul.menu-nav-ul .left-side{
   gap: 45px;
