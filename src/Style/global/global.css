@@ -9,7 +9,7 @@
     src: url(../../../public/fonts/bourtonbase.ttf);
   }
   @font-face {
-    font-family:' BourtonBaseDrop';
+    font-family:'BourtonBaseDrop';
     src: url(../../../public/fonts/bourtonbasedrop.ttf);
   }
   @font-face {
@@ -29,7 +29,7 @@
     --white-color: #ffffff;
     --body-font:  'DM Sans';
     --primary-font:'BourtonBase', sans-serif;
-    --secondary-font:'BourtonBaseDrop', sans-serif;
+    --secondary-font:'BourtonBaseDrop';
     --third-font:'BourtonLineBold', sans-serif;
     --sec-title-font: 25px;
     --p-font: 16px;

@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Faq from "react-faq-component";
 import HeroCardItems from "../components/Home/HeroCardItems";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import NFTCollectionsItem from "../components/Home/NFTCollectionsItem";
 import NFTCollections from "../components/Home/NFTCollections";
 import { Data } from "../FaqData/FaqQuestionData";
-import "../Style/home.css"
+import "../Style/home.css";
+import UseCaseCircle from "../components/Home/UseCaseCircle";
 function HomePage() {
   const styles = {
     titleTextColor: "black",
@@ -60,7 +60,9 @@ function HomePage() {
                 and manage these new digital address rights and drive price
                 appreciation for NFT buyers.
               </p>
-              <Link to={"/about"} className="custom-btn learn-more-btn mt-4">learn more</Link>
+              <Link to={"/about"} className="custom-btn learn-more-btn mt-4">
+                learn more
+              </Link>
             </div>
             <div className="about_us_right_site col-lg-5 col-md-12">
               <LazyLoadImage src="/images/home/about-us-img.svg" />
@@ -74,17 +76,17 @@ function HomePage() {
       {/* =====================  NFT USE CASES ==================== */}
       <section className="use-cases">
         <div className="container">
-          <div className="use-cases-wrapper row">
+          <div className="use-cases-wrapper row d-flex align-items-center">
             <div className="use-cases-left-item col-lg-6 col-md-12">
               <span className="focus-color">NFT use Cases</span>
-              <h1 className="section-title-2">
+              <h1 className="section-title-2 mb-4">
                 How Does My EAS NFT Make <span>Money?</span>
               </h1>
               <p>
                 When many people hear “NFT” they may think of silly overpriced
                 monkey doodles. But the reality is that the actual technological
                 power of non-fungible tokens on the blockchain goes{" "}
-                <span>
+                <span className="focus-color-2">
                   <Link to={""}>SO far beyond</Link>
                 </span>{" "}
                 just artwork alone.
@@ -107,21 +109,25 @@ function HomePage() {
                 </ul>
               </div>
             </div>
-            <div className="use-cases-right-item col-lg-6 col-md-12"></div>
+            <div className="use-cases-right-item col-lg-6 col-md-12">
+          <UseCaseCircle/>
+            </div>
           </div>
         </div>
       </section>
       {/* ========================= FAQ QUESTION  ================== */}
-      <section className="faq-question">
+      <section className="faq-question cpt-6">
         <div className="container">
-          <div className="faq-question-wrapper row">
-            <div className="col-lg-6 col-md-12">
+          <div className="faq-question-wrapper row d-flex align-items-center">
+            <div className="col-lg-7 col-md-12">
               <div className="faq-question-content">
                 <div className="faq-question-content-header">
                   <span className="focus-color">
                     FREQUENTLY ASKED QUESTIONS
                   </span>
-                  <h1 className="section-title-2">Most Popular Questions</h1>
+                  <h1 className="section-title-2 mb-5">
+                    Most Popular Questions
+                  </h1>
                 </div>
                 <div>
                   <Faq data={Data} styles={styles} />
@@ -137,7 +143,11 @@ function HomePage() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-md-12"></div>
+            <div className="col-lg-5 col-md-12">
+              <div className="faq-question-img">
+                <LazyLoadImage src="/images/home/faq-question-img.svg" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -149,7 +159,9 @@ function HomePage() {
             <div className="col-lg-7 col-md-12">
               <div className="eas-affiliate-content">
                 <span className="focus-color">JOIN OUR COMMUNITY</span>
-                <h2 className="section-title-2 mb-4">Become an EAS Affiliate</h2>
+                <h2 className="section-title-2 mb-4">
+                  Become an EAS Affiliate
+                </h2>
                 <p>
                   EAS is growing its NFT community through dedicated affiliates
                   interested in building virtual NFT neighborhoods.
@@ -166,7 +178,7 @@ function HomePage() {
             </div>
             <div className="col-lg-5 col-md-12">
               <div className="eas-affiliate-img">
-                <LazyLoadImage src="/images/home/affiliate-img.svg"/>
+                <LazyLoadImage src="/images/home/affiliate-img.svg" />
               </div>
             </div>
           </div>
