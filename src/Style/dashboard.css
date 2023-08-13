@@ -382,12 +382,6 @@ box-shadow: 10px 14px 24px 0px rgba(175, 175, 175, 0.12);
     color: #5E5E5E;
 }
 
-
-
-/* ======================== Ticket Page ================= */
-
-
-
 @media screen and (max-width: 1240px) {
     .filter-menu-item-con{
         display: flex;

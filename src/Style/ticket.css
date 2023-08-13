@@ -17,7 +17,7 @@
 .msg-user {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     gap: 15px;
 }
 .msg-box {

@@ -4,10 +4,6 @@ import "../Style/layout/login-register.css";
 import LoginInfo from "../components/Login-Register/LoginInfo";
 import SignUpInfo from "../components/Login-Register/SignUpInfo";
 const LoginRegisterPage = () => {
-  //   const [isActive, setIsActive] = useState(false);
-  //   const handleActive = () => {
-  //     setIsActive(!isActive);
-  //   };
   const [isInfoShow, setInfoShow] = useState(1);
   const handleShow = (index) => {
     setInfoShow(index);

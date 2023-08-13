@@ -3,7 +3,6 @@ import CetagoriesListNFTs from "../components/AddressNFTs/CetagoriesListNFTs";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
 import "../Style/addressnft.css";
 
 const AddressNFTsPage = () => {

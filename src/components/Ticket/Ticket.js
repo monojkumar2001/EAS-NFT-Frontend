@@ -1,7 +1,7 @@
 import React from "react";
 import TicketNewModel from "./TicketNewModel";
 import {FaSearch} from "react-icons/fa";
-import "../../Style/ticket.css"
+
 import TicketListItem from "./TicketListItem";
 const Ticket = () => {
   return (

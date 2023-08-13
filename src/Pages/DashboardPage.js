@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import "../Style/dashboard.css";
+import "../Style/ticket.css"
 import MyNfts from "../components/Dashboard/MyNfts";
 import AccountDetails from "../components/Dashboard/AccountDetails";
 import ContactUs from "../components/Dashboard/ContactUs";
@@ -7,7 +8,7 @@ import ClaimNewNfts from "../components/Dashboard/ClaimNewNfts";
 import Referral from "../components/Dashboard/Referral";
 import Ticket from "../components/Ticket/Ticket";
 import TicketMessages from "../components/Ticket/TicketMessages";
-import { Link ,Outlet, useParams } from "react-router-dom";
+import { Link ,Outlet } from "react-router-dom";
 const DashboardPage = () => {
   const [filterActive, setFilterActive] = useState([false]);
   const toggleFilterMenu = () => {
@@ -43,7 +44,7 @@ const DashboardPage = () => {
                             toggleFilter(1);
                           }}
                         >
-                          
+
                           <Link to="/account"
                             className="filter-left-items d-flex align-items-center gap-2 "
                             onClick={toggleFilterMenu}

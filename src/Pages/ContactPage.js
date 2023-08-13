@@ -1,4 +1,4 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import ContactLeftItem from "../components/Contact/ContactLeftItem";
 import "../Style/contact.css"
 import ContactUs from "../components/Dashboard/ContactUs";

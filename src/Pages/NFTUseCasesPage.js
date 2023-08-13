@@ -1,12 +1,8 @@
-// import { useState } from "react";
+
 import "../Style/nftUseCases.css";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-// import "swiper/css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import NftUseCaseItem from "../components/NftUseCase/NftUseCaseItem";
 import { Link } from "react-router-dom";
-// import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import RecentNewSlider from "../components/NftUseCase/RecentNewSlider";
 const NFTUseCases = () => {
   return (

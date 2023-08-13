@@ -1,7 +1,5 @@
 import React from "react";
-
 import "../Style/knowledgeBase.css";
-// import KnowledgeFaqCard from "../components/KnowledgeBaseFaq/KnowledgeFaqCard";
 import EasNftTypes from "../components/KnowledgeBaseFaq/EasNftTypes";
 import GasFee from "../components/KnowledgeBaseFaq/GasFee";
 import BuyingNFTs from "../components/KnowledgeBaseFaq/BuyingNFTs";
