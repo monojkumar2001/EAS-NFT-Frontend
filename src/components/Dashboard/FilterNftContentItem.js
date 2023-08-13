@@ -9,7 +9,7 @@ const FilterNftContentItem = ({ nftInfo }) => {
         </div>
         <div className="filter-content-title">
           <span>{nftInfo.value}</span>
-          <h5></h5>
+          {/* <h5></h5> */}
         </div>
       </div>
       {/* {

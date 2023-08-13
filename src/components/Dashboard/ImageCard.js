@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import FilterNftContentItem from "./FilterNftContentItem";
 import axios from "axios";
 import { convertIpfsAddress } from "../../utils";
 

@@ -2,7 +2,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, Pagination, A11y } from "swiper/modules";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import RecentNewsItem from "./RecentNewsItem";
 const RecentNewSlider = () => {
   return (

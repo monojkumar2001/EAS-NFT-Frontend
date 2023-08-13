@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import EasBanner from "../components/KnowledgeBaseFaq/EasBanner";
 import AboutCardItem from "../components/AboutCard/AboutCardItem";
 import EasPriceItem from "../components/AboutCard/EasPriceItem";
@@ -7,18 +7,18 @@ import { Link } from "react-router-dom";
 import {FaFile} from "react-icons/fa"
 import "../Style/about.css"
 const AboutPage = () => {
-  const videoRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+  // const videoRef = useRef(null);
+  // const [isPlaying, setIsPlaying] = useState(false);
 
-  const handlePlayPause = () => {
-    const video = videoRef.current;
-    if (video.paused) {
-      video.play();
-    } else {
-      video.pause();
-    }
-    setIsPlaying(!video.paused);
-  };
+  // const handlePlayPause = () => {
+  //   const video = videoRef.current;
+  //   if (video.paused) {
+  //     video.play();
+  //   } else {
+  //     video.pause();
+  //   }
+  //   setIsPlaying(!video.paused);
+  // };
   return (
     <>
       {/* ============ Banner ========== */}

@@ -6,12 +6,12 @@ const TicketChatBox = () => {
     const [text, setText] = useState("");
     const [characterCount, setCharacterCount] = useState(0);
     const [selectedFile, setSelectedFile] = useState(null);
-    const [inputStr, setInputStr] = useState('');
-    const [showPicker, setShowPicker] = useState(false);
-    const onEmojiClick = (event, emojiObject) => {
-      setInputStr(prevInput => prevInput + emojiObject.emoji);
-      setShowPicker(false);
-    };
+    // const [inputStr, setInputStr] = useState('');
+    // const [showPicker, setShowPicker] = useState(false);
+    // const onEmojiClick = (event, emojiObject) => {
+    //   setInputStr(prevInput => prevInput + emojiObject.emoji);
+    //   setShowPicker(false);
+    // };
   return (
     <>
       <div className="ticket-chat-box-wrapper">

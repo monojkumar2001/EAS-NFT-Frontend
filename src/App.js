@@ -20,7 +20,7 @@ import AboutPage from "./Pages/AboutPage";
 import ContactPage from "./Pages/ContactPage";
 import HomePage from "./Pages/HomePage";
 import LoginRegisterPage from "./Pages/LoginRegisterPage";
-import AccountDetails from "./components/Dashboard/AccountDetails";
+
 function App() {
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap.bundle.min.js");

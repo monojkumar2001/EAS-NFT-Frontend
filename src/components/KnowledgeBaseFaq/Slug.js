@@ -1,11 +1,8 @@
 import React from "react";
-import { FaqData, FaqData2 } from "../../FaqData/FaqData";
 import { Link, useParams } from "react-router-dom";
 import { BsEmojiSmile } from "react-icons/bs";
 import { FaChevronRight } from "react-icons/fa";
 import EasBanner from "./EasBanner";
-import SocialMediaLinkItem from "../SocialMediaLink/SocialMediaLinkItem";
-import { NavLink } from "react-router-dom";
 import SocialMediaShareItem from "../SocialMediaLink/SocialMediaShareItem";
 import FaqHelpModel from "./FaqHelpModel";
 
@@ -13,7 +10,7 @@ const FaqQuestionDetails = ({ data1 }) => {
   const id = useParams();
   console.log("id", id);
 
-  const singleData = data1.filter((res) => res.slug == id.id);
+  const singleData = data1.filter((res) => res.slug === id.id);
   console.log(singleData);
 
   return (

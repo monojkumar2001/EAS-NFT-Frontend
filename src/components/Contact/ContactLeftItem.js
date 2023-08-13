@@ -36,19 +36,20 @@ const ContactLeftItem = () => {
               <div className="social-item-content">
                 <h5>Follow Us</h5>
                 <div className="social-contact-list d-flex align-items-center gap-3">
-                  <a href="https://twitter.com/eas_nft" target="_blank">
+                  <a href="https://twitter.com/eas_nft" target="_blank" rel="noopener noreferrer">
                     <FaTwitter />
                   </a>
-                  <a href="https://www.facebook.com/easNFT/" target="_blank">
+                  <a href="https://www.facebook.com/easNFT/" target="_blank" rel="noopener noreferrer">
                     <FaFacebookF />
                   </a>
                   <a
                     href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Feasnft%2Fabout%2F"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FaLinkedinIn />
                   </a>
-                  <a href="https://www.instagram.com/eas_nft/" target="_blank">
+                  <a href="https://www.instagram.com/eas_nft/" target="_blank" rel="noopener noreferrer">
                     <FaInstagram />
                   </a>{" "}
                 </div>

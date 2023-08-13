@@ -13,7 +13,6 @@ const NFTCollectionsItem = ({iconImg, title, description, link, subText}) => {
             <h4>{title}</h4>
             <p>{description}</p>
             <Link to={link} className='nft-collection-learn-more-btn'>{subText}  <FaChevronRight /></Link>
-            <a href=""></a>
         </div>
     </div>
     </>
