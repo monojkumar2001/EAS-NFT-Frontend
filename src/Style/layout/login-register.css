@@ -65,6 +65,7 @@
   border: none;
   background: none;
   color: var(--white-color);
+  width: 100%;
 }
 .info-wrapper .input-fluid-item input::placeholder {
     color: #BDBAD7;

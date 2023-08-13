@@ -28,7 +28,7 @@ const EasNftTypes = ({data1}) => {
                 <span>
                   <img src={item.fileIcon} alt="" />
                 </span>
-                <Link to={`/docs/${item.id}`}>{item.faq}</Link>
+                <Link to={`/docs/${item.slug}`}>{item.title}</Link>
               </div>
             );
           })}

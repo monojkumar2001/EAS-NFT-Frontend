@@ -18,7 +18,9 @@ import NFTUseCases from "./Pages/NFTUseCasesPage";
 import NftPricingPage from "./Pages/NftPricingPage";
 import AboutPage from "./Pages/AboutPage";
 import ContactPage from "./Pages/ContactPage";
+import HomePage from "./Pages/HomePage";
 import LoginRegisterPage from "./Pages/LoginRegisterPage";
+import AccountDetails from "./components/Dashboard/AccountDetails";
 function App() {
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap.bundle.min.js");
@@ -32,7 +34,8 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<DashboardPage />} />
+          <Route path="/" element ={<HomePage/>}/>
+          <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/docs" element={<KnowledgeBaseFaq data1={FaqData1} data2={FaqData2} data3={FaqData3} data4={FaqData4} data5={FaqData5} data6={FaqData6}  />}/> 
           <Route path="/docs/:id"   element={<Slug data1={FaqData1} data2={FaqData2} data3={FaqData3} data4={FaqData4} data5={FaqData5} data6={FaqData6}  />}/> 
           <Route path="/address-nfts" element={<AddressNFTsPage/>}/>

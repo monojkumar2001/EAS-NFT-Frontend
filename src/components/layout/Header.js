@@ -7,12 +7,6 @@ function Header() {
   const _toggleSidebar = () => {
     setSidebarActive(!sidebarActive);
   };
-
-  // const [dropdownActive, setDropdownActive] = useState(false);
-  // const toggleDropdown = () => {
-  //   setDropdownActive(!dropdownActive);
-  // };
-
   const [activeDropdown, setActiveDropdown] = useState(0);
   const toggleActiveDrop = (index) => {
     setActiveDropdown(index);
@@ -114,7 +108,7 @@ function Header() {
                         <Link to={"/nft-pricing"}>NFT Pricing</Link>
                       </li>
                       <li onClick={_toggleSidebar}>
-                        <Link to={""}>Knowledge Base & FAQ</Link>
+                        <Link to={"/docs"}>Knowledge Base & FAQ</Link>
                       </li>
                     </ul>
                   </div>
@@ -133,7 +127,7 @@ function Header() {
                   <div className="dp-menu">
                     <ul className="dp-menu-ul">
                       <li onClick={_toggleSidebar}>
-                        <Link to={""}>Our Mission</Link>
+                        <Link to={"/about"}>Our Mission</Link>
                       </li>
                       <li onClick={_toggleSidebar}>
                         <Link to={"/contact"}>Contact</Link>
@@ -166,7 +160,7 @@ function Header() {
                         <Link to={"/login-register"}>Login/Register</Link>
                       </li>
                       <li onClick={_toggleSidebar}>
-                        <Link to={""}>Account Dashboard</Link>
+                        <Link to={"/dashboard"}>Account Dashboard</Link>
                       </li>
                       <li onClick={_toggleSidebar}>
                         <Link to={""}>My NFTs</Link>
@@ -188,7 +182,7 @@ function Header() {
             </ul>
           </div>
           <div className="show-nav" onClick={_toggleSidebar}>
-            <img src="./images/menu.svg" alt="" />
+            <img src="/images/menu.svg" alt="" />
           </div>
         </nav>
       </div>

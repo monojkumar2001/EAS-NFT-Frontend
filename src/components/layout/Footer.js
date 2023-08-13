@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6">
               <div className="footer-item-fluid footer-items-content d-flex text-center algin-items-center justify-content-center flex-column">
                 <Link to={"/"}>
-                  <LazyLoadImage src="images/footer/footer-logo.svg" />
+                  <LazyLoadImage src="/images/footer/footer-logo.svg" />
                 </Link>
                 <p>
                   The only platform mapping the worlds addresses as tradable

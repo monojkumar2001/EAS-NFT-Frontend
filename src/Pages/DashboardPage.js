@@ -5,9 +5,9 @@ import AccountDetails from "../components/Dashboard/AccountDetails";
 import ContactUs from "../components/Dashboard/ContactUs";
 import ClaimNewNfts from "../components/Dashboard/ClaimNewNfts";
 import Referral from "../components/Dashboard/Referral";
-import { Link } from "react-router-dom";
 import Ticket from "../components/Ticket/Ticket";
 import TicketMessages from "../components/Ticket/TicketMessages";
+import { Link ,Outlet, useParams } from "react-router-dom";
 const DashboardPage = () => {
   const [filterActive, setFilterActive] = useState([false]);
   const toggleFilterMenu = () => {
@@ -43,7 +43,7 @@ const DashboardPage = () => {
                             toggleFilter(1);
                           }}
                         >
-                          <div
+                          <Link to="/account"
                             className="filter-left-items d-flex align-items-center gap-2 "
                             onClick={toggleFilterMenu}
                           >
@@ -51,7 +51,7 @@ const DashboardPage = () => {
                               <img src="/images/dashboard/account.svg" alt="" />
                             </div>
                             <span>Account Details</span>
-                          </div>
+                          </Link>
                         </div>
                       </div>
                       <div className="filter-list-item">
@@ -310,6 +310,7 @@ const DashboardPage = () => {
           </div>
         </div>
       </div>
+      <Outlet/>
     </>
   );
 };

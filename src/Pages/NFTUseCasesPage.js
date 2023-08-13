@@ -1,23 +1,26 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "../Style/nftUseCases.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import "swiper/css";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+// import "swiper/css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import NftUseCaseItem from "../components/NftUseCase/NftUseCaseItem";
 import { Link } from "react-router-dom";
-import { FaChevronLeft, FaChevronRight} from "react-icons/fa";
+// import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import RecentNewSlider from "../components/NftUseCase/RecentNewSlider";
 const NFTUseCases = () => {
   return (
     <>
       {/* ================ NFT USE CASES ==================== */}
       <section className="nft-use-case cpt-9">
         <div className="container">
-          <div className="nft-use-case-wrapper row">
+          <div className="nft-use-case-wrapper row d-flex align-items-center">
             <div className="col-lg-7 col-md-12">
               <div className="nft-use-case-content">
                 <span className="focus-color">NFT USE CASES</span>
-                <h2 className="section-title">How Does My NFT Make Money?</h2>
+                <h2 className="section-title mb-4">
+                  How Does My NFT Make Money?
+                </h2>
                 <p>
                   EAS NFTs generate royalties and revenue from buying and
                   trading as well as real-time data not available in today’s
@@ -62,7 +65,7 @@ const NFTUseCases = () => {
       </section>
 
       {/* ==================== NFT USE CASES LIST =================== */}
-      <section className="nft-use-case-list">
+      <section className="nft-use-case-list cpy-6">
         <div className="container">
           <div className="nft-use-case-list-wrapper">
             <div className="nft-use-case-list-Item">
@@ -81,119 +84,34 @@ const NFTUseCases = () => {
                 Address NFTs within the Neighborhood’s designated postal code.
                 EAS Neighborhoods are the only NFTs in the market where buyers,
                 and not just creators, participate in royalties. Read more about
-                our Neighborhood NFTs.{" "}
+                our {""}
                 <span>
                   <Link to={""}>Neighborhood NFTs</Link>
                 </span>
-                .
               </p>
+              {/* <span className="item-hovers">1</span> */}
             </div>
             <NftUseCaseItem />
+
+            <div className="img-layer-item-1">
+            <LazyLoadImage src="/images/use-cases/ethereum-crystal.webp"/>
           </div>
+          <div className="img-layer-item-2">
+            <LazyLoadImage src="/images/use-cases/ethereum-crystal.webp"/>
+          </div>
+          <div className="img-layer-item-3">
+            <LazyLoadImage src="/images/use-cases/ethereum-crystal.webp"/>
+          </div>
+          <div className="img-layer-item-4">
+            <LazyLoadImage src="/images/use-cases/ethereum-crystal.webp"/>
+          </div>
+          </div>
+         
         </div>
       </section>
 
       {/* ================ Recent News & Press Releases =============== */}
-      <section className="recent_news_press">
-        <div className="recent_new_header">
-          <span className="focus-color">What's Going on?</span>
-          <h4 className="recent-title">Recent News & Press Releases</h4>
-        </div>
-        <div className="recent-news-wrapper">
-<Swiper
-spaceBetween={20}
-slidesPerView={3}
-modules={[Navigation, Pagination, A11y]}
-breakpoints={{
-    450: {
-      slidesPerView: 1,
-    },
-    680: {
-      slidesPerView: 1.5,
-    },
-    1050: {
-      slidesPerView: 2,
-    },
-    1400: {
-      slidesPerView: 3,
-    },
-  }}
-navigation={{
-    prevEl: ".prev",
-    nextEl: ".next",
-  }}
->
-<SwiperSlide>
-    <div className="recent-new-slider-con">
-        <button className="alt-custom-btn">
-        Press Releases
-        </button>
-        <div className="recent-item-content">
-        <p>JUNE 5, 2023</p>
-        <h3>EAS Launches Platform to Map the World’s Addresses as NFT-based Digital Rights</h3>
-        <span>Ethereum Address Service (“EAS”) is thrilled to announce the launch of its ground-breaking platform...</span>
-        </div>
-    </div>
-</SwiperSlide>
-<SwiperSlide>
-    <div className="recent-new-slider-con">
-        <button className="alt-custom-btn">
-        Press Releases
-        </button>
-        <div className="recent-item-content">
-        <p>JUNE 5, 2023</p>
-        <h3>EAS Launches Platform to Map the World’s Addresses as NFT-based Digital Rights</h3>
-        <span>Ethereum Address Service (“EAS”) is thrilled to announce the launch of its ground-breaking platform...</span>
-        </div>
-    </div>
-</SwiperSlide>
-<SwiperSlide>
-    <div className="recent-new-slider-con">
-        <button className="alt-custom-btn">
-        Press Releases
-        </button>
-        <div className="recent-item-content">
-        <p>JUNE 5, 2023</p>
-        <h3>EAS Launches Platform to Map the World’s Addresses as NFT-based Digital Rights</h3>
-        <span>Ethereum Address Service (“EAS”) is thrilled to announce the launch of its ground-breaking platform...</span>
-        </div>
-    </div>
-</SwiperSlide>
-<SwiperSlide>
-    <div className="recent-new-slider-con">
-        <button className="alt-custom-btn">
-        Press Releases
-        </button>
-        <div className="recent-item-content">
-        <p>JUNE 5, 2023</p>
-        <h3>EAS Launches Platform to Map the World’s Addresses as NFT-based Digital Rights</h3>
-        <span>Ethereum Address Service (“EAS”) is thrilled to announce the launch of its ground-breaking platform...</span>
-        </div>
-    </div>
-</SwiperSlide>
-<SwiperSlide>
-    <div className="recent-new-slider-con">
-        <button className="alt-custom-btn">
-        Press Releases
-        </button>
-        <div className="recent-item-content">
-        <p>JUNE 5, 2023</p>
-        <h3>EAS Launches Platform to Map the World’s Addresses as NFT-based Digital Rights</h3>
-        <span>Ethereum Address Service (“EAS”) is thrilled to announce the launch of its ground-breaking platform...</span>
-        </div>
-    </div>
-</SwiperSlide>
-</Swiper>
-<div className="slider-nav">
-                <div className="prev">
-                  <FaChevronLeft/>
-                </div>
-                <div className="next">
-                <FaChevronRight/>
-                </div>
-              </div>
-        </div>
-      </section>
+      <RecentNewSlider/>
     </>
   );
 };

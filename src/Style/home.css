@@ -1,0 +1,183 @@
+.hero {
+  background-image: url(https://www.easnft.com/wp-content/uploads/2023/03/nft-metaverse-digital-city-banner-scaled.webp);
+  background-position: top right;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  /* height: 100vh; */
+  width: 100%;
+  padding: 150px 0;
+}
+.hero-bg-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #151515;
+  opacity: 0.5;
+  z-index: -1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-wrapper .hero-title {
+  font-size: 70px;
+  font-family: var(--primary-font);
+  color: var(--white-color);
+}
+.hero-wrapper .hero-title span {
+  color: var(--main-color);
+}
+.address-input-fluid {
+  width: 50%;
+}
+.address-input-fluid input {
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 4px;
+  border: none;
+}
+.hero-bg-hover {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #ffffff00 0%, #04011c 100%);
+}
+
+/* ===============  hero-card ============*/
+.hero-card .hero-card-items .hero-card-item {
+  position: relative;
+  cursor: pointer;
+}
+.hero-card .hero-card-items .hero-card-item:nth-child(1)::before {
+  content: "01";
+  font-size: 100px;
+  font-family: var(--primary-font);
+  -webkit-text-stroke: 3px #003576;
+  position: absolute;
+  top: -20px;
+  right: 50px;
+  color:#000;
+  transition: 0.4s;
+  z-index: -1;
+}
+.hero-card .hero-card-items .hero-card-item:nth-child(2)::before {
+  content: "02";
+  font-size: 100px;
+  font-family: var(--primary-font);
+  -webkit-text-stroke: 3px #003576;
+  position: absolute;
+  top: -20px;
+  right: 50px;
+  transition: 0.4s;
+  color:#000;
+  z-index: -1;
+}
+.hero-card .hero-card-items .hero-card-item:nth-child(3)::before {
+  content: "03";
+  font-size: 100px;
+  font-family: var(--primary-font);
+  -webkit-text-stroke: 3px #003576;
+  position: absolute;
+  top: -20px;
+  transition: 0.4s;
+  right: 50px;
+  color:#000;
+  z-index: -1;
+}
+.hero-card .hero-card-items .hero-card-item:nth-child(1):hover::before{
+  -webkit-text-stroke: 2px #003576;
+  color:#0087FF;
+}
+.hero-card .hero-card-items .hero-card-item:nth-child(2):hover::before{
+  -webkit-text-stroke: 2px #003576;
+  color:#0087FF;
+}
+.hero-card .hero-card-items .hero-card-item:nth-child(3):hover::before{
+  -webkit-text-stroke: 2px #003576;
+  color:#0087FF;
+}
+.hero-card-item h3 {
+  font-size: 26px;
+  font-family: var(--third-font);
+  margin-bottom: 15px;
+}
+.hero-card-itemss p {
+  color: #bdbad7;
+}
+.hero-card-footer-text span {
+  font-size: 18px;
+  font-family: var(--third-font);
+}
+.hero-card-footer-text {
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--main-color);
+  width: 60%;
+  margin: auto;
+}
+
+/* ============ About Us ============= */
+.about_us_left_site .learn-more-btn{
+    width: fit-content;
+}
+.about_us_right_site img{
+width: 80%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: auto;
+}
+
+/* ==================== NFT Collection ===========  */
+.nft-collections{
+    background-image: url(../../public/images/home/nft-collection-img.svg);
+    background-position: 400px 10px;
+    background-repeat: no-repeat;
+    background-size: 1400px auto;
+    padding-bottom: 150px;
+}
+.nft-collections-item{
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #4690D430 50%, #4690D400 100%);
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FFFFFF1A;
+    transition: 0.5s;  
+    height: 100%;
+    cursor: pointer;
+}
+.nft-collections-item:hover{
+  transform: translateY(-10px);
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #0080f830 50%, #4690D400 100%);
+}
+.nft-collection-learn-more-btn{
+    font-family: var(--primary-font);
+    color: var(--main-color);
+}
+.nft-collections-item .nft-collection-icon span{
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+/* ======================== EAS AFFILIATE ================== */
+
+.eas-affiliate-img img{
+    width: 100%;
+}

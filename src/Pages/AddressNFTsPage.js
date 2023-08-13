@@ -113,7 +113,7 @@ const AddressNFTsPage = () => {
       </section>
 
       {/* ==================== NFTS AVAILABLE NOW ==================== */}
-      <section className="nft-available-now">
+      {/* <section className="nft-available-now">
         <div className="container">
           <div className="nft-available-now-wrapper">
             <div className="nft-available-now-title">
@@ -122,7 +122,7 @@ const AddressNFTsPage = () => {
             <div className="nft-available-now-items"></div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

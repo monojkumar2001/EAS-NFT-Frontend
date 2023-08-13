@@ -1,16 +1,18 @@
 import React from "react";
 import TicketNewModel from "./TicketNewModel";
+import {FaSearch} from "react-icons/fa";
 import "../../Style/ticket.css"
+import TicketListItem from "./TicketListItem";
 const Ticket = () => {
   return (
     <>
       <div className="content-eas-nft-wrapper">
-        <div className="ticket-header-item">
-          <div className="ticket-header-left-item">
+        <div className="ticket-header-item d-flex align-items-center justify-content-between">
+          <div className="ticket-header-left-item d-flex align-items-center gap-3">
             <div className="form-group">
-              <label htmlFor="exampleFormControlSelect1">Example select</label>
+              <label htmlFor="exampleFormControlSelect1">Status:</label>
               <select className="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
+                <option>Any</option>
                 <option>2</option>
                 <option>3</option>
                 <option>4</option>
@@ -21,10 +23,16 @@ const Ticket = () => {
               <TicketNewModel />
             </div>
           </div>
+          <div className="ticket-header-right-item">
+            <div className="ticket-search-input-fluid">
+              <button type="submit"><FaSearch/></button>
+              <input type="text" placeholder="Search..." />
+            </div>
+          </div>
         </div>
-        <div className="ticket-item-content">
+        <div className="ticket-item-content mt-4">
           <div className="table-responsive">
-            <table className="table">
+            <table className="table table-hover">
               <thead>
                 <tr>
                   <th scope="col">Ticket ID</th>
@@ -34,19 +42,9 @@ const Ticket = () => {
                 </tr>
               </thead>
               <tbody>
-         
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-                </tr>
+                <TicketListItem/>
+                <TicketListItem/>
+                <TicketListItem/>
               </tbody>
             </table>
           </div>

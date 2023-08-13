@@ -6,7 +6,7 @@ const AboutCardItem = () => {
       {aboutData.map((item, i) => {
         return (
           <div className="col-lg-4 col-md-6 col-sm-12" key={i}>
-            <div className="about-eas-item">
+            <div className="about-eas-item d-flex align-items-start gap-3">
               <div className="about-icon">
                 <img src={item.icon} alt="" />
               </div>

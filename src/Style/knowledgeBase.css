@@ -2,9 +2,6 @@
 .knowledge-base-banner {
   width: 100%;
 }
-.faq-question-details-wrapper {
-  padding: 150px;
-}
 .knowledge-base-banner-wrapper {
   width: 100%;
   display: flex;
@@ -95,4 +92,90 @@
 .knowledge-explore-more-btn:hover {
   background: var(--main-color);
   color: var(--white-color);
+}
+/* =================== Faq Details =========== */
+.faq-question-details-wrapper{
+  background-color: #f2f4f7;
+}
+.faq-question-con-wrapper{
+  width: 80%;
+  margin:auto ;
+}
+.faq-question-route a{
+  font-size: 18px;
+  color: var(--main-color);
+}
+.faq-question-route .faq-title{
+  color: var(--black-color);
+}
+.faq-question-details-content h1{
+  font-size: 35px;
+  font-family: var(--primary-font);
+  color: var(--black-color);
+  margin-bottom: 20px;
+}
+.faq-question-details-content p{
+  color: var(--black-color);
+}
+.faq-question-details-footer .faq-footer-item{
+  background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.faq-question-details-footer .faq-sub-question-dis{
+  color: var(--black-color);
+  font-family: var(--primary-font);
+}
+.faq-footer-emoji span{
+  background-color: var(--main-color);
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.faq-footer-emoji span:hover{
+  background-color: var(--white-color);
+  color: var(--main-color);
+  transform: translateY(-5px);
+}
+.faq-social-media-share-item  .faq-footer-item-social .social-media-link{
+  margin-bottom: 0;
+}
+.faq-social-media-share-item  .faq-footer-item-social .social-media-link a{
+  background-color: var(--main-color);
+  border: none;
+}
+.faq-social-media-share-item  .faq-footer-item-social .social-media-link a:hover{
+  background-color: var(--white-color);
+  color: var(--main-color);
+  border: none;
+}
+.faq-help-item-con .faq-help-left-item .faq-help-btn{
+  color: #566e8b;
+  font-size: 18px;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.faq-help-item-con .faq-help-left-item .faq-help-btn:hover{
+  color: var(--main-color);
+}
+.faq-help-right-item span{
+  font-size: 18px;
+  color: #566e8b;
+}
+.faq-help-model-item .ticket-model-input-fluid label{
+ color: #7e8da2;
+ font-size: 16px;
+}
+.faq-help-model-item .faq-help-model-item-btn{
+ width: fit-content;
 }

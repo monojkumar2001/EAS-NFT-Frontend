@@ -5,7 +5,7 @@ const TicketNewModel = () => {
     <>
       <button
         type="button"
-        className="create-ticket-btn"
+        className="create-ticket-btn custom-btn"
         data-bs-toggle="modal"
         data-bs-target="#create-ticket"
       >
@@ -25,7 +25,7 @@ const TicketNewModel = () => {
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title" id="staticBackdropLabel">
-                Modal title
+              Open a New Ticket <span><img src="/images/dashboard/ticket-id.svg" alt="" /></span>
               </h5>
               <button
                 type="button"
@@ -34,17 +34,31 @@ const TicketNewModel = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="modal-body">...</div>
-            <div className="modal-footer">
-              <button
-                type="button"
-                className="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" className="btn btn-primary">
-                Understood
+            <div className="modal-body ticket-model-content_item">
+              <div className="ticket-model-input-fluid">
+              <input type="text" placeholder="Order ID(Optional)" />
+              </div>
+              <div className="ticket-model-input-fluid">
+              <select className="form-control" id="exampleFormControlSelect1">
+                <option>Any</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              </div>
+              <div className="ticket-model-input-fluid">
+              <input type="text" placeholder="What can we help you with ?" />
+              </div>
+              <div className="ticket-model-input-fluid">
+              <textarea name="" id="" cols="30" rows="4" placeholder="Message....."></textarea>
+              </div>
+              <div className="ticket-model-input-fluid">
+                <label htmlFor="">Attachment (Optional)</label>
+              <input type="file"/>
+              </div>
+              <button className="ticket-model-open-now-btn custom-btn">
+             OPEN NOW
               </button>
             </div>
           </div>

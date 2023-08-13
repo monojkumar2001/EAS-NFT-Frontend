@@ -42,6 +42,15 @@
     color: var(--white-color);
     font-family: var(--primary-font);
   }
+  .section-title-2{
+    font-size:46px;
+    font-weight: 500;
+    color: var(--white-color);
+    font-family: var(--primary-font);
+  }
+  .section-title-2 span{
+    color: var(--main-color);
+  }
   .section-title span{
     color: var(--main-color);
   }
@@ -58,6 +67,9 @@
     .section-title{
       font-size: 50px;
     }
+    .section-title-2{
+      font-size: 35px;
+    }
   }
   
   @media screen and (max-width: 768px) {
@@ -66,6 +78,9 @@
     }
     .section-title{
       font-size: 40px;
+    }
+    .section-title-2{
+      font-size: 30px;
     }
   }
   
@@ -92,7 +107,7 @@ html{
   scroll-behavior: smooth;
 }
 body {
-  background-color: #141820!important ;
+  background-color: #020015!important ;
     font-size: var(--p-font) !important;
     font-weight: 400 !important;
     font-family: var(--body-font) !important;

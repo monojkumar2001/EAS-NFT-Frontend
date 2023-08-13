@@ -3,7 +3,9 @@ import EasBanner from "../components/KnowledgeBaseFaq/EasBanner";
 import AboutCardItem from "../components/AboutCard/AboutCardItem";
 import EasPriceItem from "../components/AboutCard/EasPriceItem";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
+import { Link } from "react-router-dom";
+import {FaFile} from "react-icons/fa"
+import "../Style/about.css"
 const AboutPage = () => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -39,7 +41,7 @@ const AboutPage = () => {
               buyers.
             </p>
 
-            <div className="about-video-item">
+            <div className="about-video-item mt-4">
               <button className="custom-btn">
                 <span></span>
                 View a Message from Our Founder
@@ -55,19 +57,19 @@ const AboutPage = () => {
             </div> */}
           </div>
 
-          <div className="row">
+          <div className="row cpt-7">
             <AboutCardItem />
           </div>
         </div>
       </section>
 
       {/* =================== EAS Owners Earn ================== */}
-      <section className="eas-owners-earn">
+      <section className="eas-owners-earn cpb-6">
         <div className="container">
-          <div className="eas-owners-earn-wrapper">
-            <div className="eas-owners-earn-left">
+          <div className="eas-owners-earn-wrapper row ">
+            <div className="eas-owners-earn-left col-lg-6 col-md-12">
               <span className="focus-color">HOW WE'RE DIFFERENT</span>
-              <h1 className="section-title">
+              <h1 className="section-title mb-4">
                 EAS Neighborhood NFT Owners Earn Significant Revenue
               </h1>
               <p>
@@ -77,15 +79,20 @@ const AboutPage = () => {
                 every trade of EAS Address & Charity NFTs within their
                 neighborhood.
               </p>
-              <div className="eas-price-items row">
+              <div className="eas-price-items row mt-4">
                 <EasPriceItem />
               </div>
+              <div className="explore-btn mt-4">
+                <Link to={'/'} className="custom-btn d-flex align-items-center gap-2"><p><FaFile/></p>
+               <span> Explore Nft use case</span>
+                </Link>
+              </div>
             </div>
-            <div className="eas-owners-earn-right">
+            <div className="eas-owners-earn-right col-lg-6 col-md-6">
               <LazyLoadImage src="/images/about/world-map.png" alt="EAS Price Image" />
             </div>
           </div>
-          <div className="eas-price-footer-item">
+          <div className="eas-price-footer-item d-flex align-items-center justify-content-center gap-2 mt-5">
             <p>
               If you don’t find the answers you’re looking for, please feel free
               to ask us anything!
